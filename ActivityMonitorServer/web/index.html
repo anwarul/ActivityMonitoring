@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Registered devices status</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<style type="text/css">
+		   body { background: #b8cdef !important; } /* to overwrite Bootstrap*/
+		</style>
+	</head>
+	<body>
+		<div class="well">
+			<span class="glyphicon glyphicon-time"></span> <span id="tick-time">no-time</span>
+		</div>
+		<div class="well">
+			<div class="table-responsive">
+				<table class="table" id="main-table">
+					<tr>
+						<th>MAC</th>
+						<th>Name</th>
+						<th>Last Active</th>
+						<th>Is enabled</th>
+						<th>Delete</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!--templates-->
+		<template id="rowTemplate">
+			<tr class="tableRow">
+				<td class="mac"></td>
+				<td class="name"></td>
+				<td class="last-active"></td>
+				<td class="is-enabled"></td>
+				<td><button class="btn btn-danger delete-button">Delete</button></td>
+			<th>
+		</template>
+	</body>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/renderer.js"></script>
+</html>
